@@ -17,9 +17,11 @@ Run Claude Code on Cloudflare Sandboxes for automated code modifications.
 ## Requirements
 
 - **Workers Paid Plan** - Sandbox SDK requires Cloudflare Workers Paid
-- **Docker** - Required locally to build container images for deployment
-- **Anthropic API Key** - For Claude Code execution
-- **Cloudflare API Token** - With Workers Scripts and Containers permissions
+- **Docker Desktop** - Required locally to build container images (the build happens locally, then pushed to Cloudflare)
+- **Anthropic API Key** - For Claude Code execution (get from console.anthropic.com)
+- **Cloudflare API Token** - With Workers Scripts:Edit and Workers Containers:Edit permissions
+
+> **Note**: Docker must be running during `wrangler deploy`. If deploying from a headless server without Docker, you'll need to deploy from a machine with Docker installed.
 
 ## Setup
 
