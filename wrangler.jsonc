@@ -4,7 +4,8 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "cc-sandbox",
+  "name": "claude-code-sandbox",
+  "account_id": "52b1c60ff2a24fb21c1ef9a429e63261",
   "main": "src/index.ts",
   "compatibility_date": "2025-05-06",
   "compatibility_flags": ["nodejs_compat"],
