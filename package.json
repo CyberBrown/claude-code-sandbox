@@ -5,7 +5,8 @@
   "private": true,
   "description": "A minimal example of using the Claude Code with Sandbox SDK",
   "scripts": {
-    "deploy": "wrangler deploy",
+    "deploy": "./scripts/deploy.sh",
+    "deploy:simple": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
     "types": "wrangler types",
