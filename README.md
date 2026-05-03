@@ -74,6 +74,8 @@ curl -X POST https://claude-code-sandbox.<subdomain>.workers.dev \
 - `Dockerfile`: Sandbox container with Claude Code pre-installed
 - `src/index.ts`: Main worker logic
 
+CORS is open (`Access-Control-Allow-Origin: *`) so the endpoint is callable from a browser. Tighten it before exposing publicly.
+
 ## Architecture
 
 The worker uses Cloudflare's Sandbox SDK to run isolated containers at the edge:
